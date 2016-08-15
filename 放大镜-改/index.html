@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>无标题文档</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0
+        }
+
+        #viewBox {
+            width: 250px;
+            height: 375px;
+            position: relative;
+            top: 40px;
+            left: 30px
+        }
+
+        #viewBox img {
+            width: 100%;
+            height: 100%;
+        }
+
+        #viewBox span {
+            position: absolute;
+            height: 100px;
+            width: 100px;
+            top: 0;
+            left: 0;
+            background: red;
+            opacity: .2;
+            display: none
+        }
+
+        #bigBox {
+            width: 200px;
+            height: 200px;
+            border: 2px solid #ccc;
+            position: absolute;
+            left: 500px;
+            top: 20px;
+            overflow: hidden;
+            display: none
+        }
+
+        #bigImg {
+            position: absolute
+        }
+    </style>
+    <script>
+        window.onload = function () {
+            var viewBox = document.getElementById('viewBox');
+            var bigBox = document.getElementById('bigBox');
+            var bigImg = document.getElementById('bigImg');
+            var oSpan = document.getElementsByTagName('span')[0];
+
+
+            viewBox.onmouseover = function () {
+                bigBox.style.display = oSpan.style.display = "block";
+            };
+            viewBox.onmouseout = function () {
+                bigBox.style.display = oSpan.style.display = "none";
+            };
+
+
+            viewBox.onmousemove = function (ev) {
+                var oEv = ev || window.event;
+                var l = oEv.clientX + document.documentElement.scrollLeft - viewBox.offsetLeft - oSpan.offsetWidth / 2;
+                var t = oEv.clientY + document.documentElement.scrollTop - viewBox.offsetTop - oSpan.offsetHeight / 2;
+
+                if (l < 0) l = 0;
+                if (t < 0) t = 0;
+
+                //viewBox.offsetWidth-oSpan.offsetWidth  span 水平移动的最大距离
+                //viewBox.offsetHeight-oSpan.offsetHeight span 垂直移动的最大距离
+                if (l > viewBox.offsetWidth - oSpan.offsetWidth) l = viewBox.offsetWidth - oSpan.offsetWidth;
+                if (t > viewBox.offsetHeight - oSpan.offsetHeight) t = viewBox.offsetHeight - oSpan.offsetHeight;
+
+
+                var l_rate = l / (viewBox.offsetWidth - oSpan.offsetWidth);
+                var t_rate = t / (viewBox.offsetHeight - oSpan.offsetHeight);
+
+
+                bigImg.style.left = (bigBox.offsetWidth - bigImg.offsetWidth) * l_rate + 'px';
+                bigImg.style.top = (bigBox.offsetHeight - bigImg.offsetHeight) * t_rate + 'px';
+
+
+                oSpan.style.left = l + 'px';
+                oSpan.style.top = t + 'px';
+
+            }
+
+
+        }
+
+
+    </script>
+
+
+</head>
+
+<body>
+<div id="viewBox">
+    <img src="IMG_0955.jpg">
+    <span></span>
+</div>
+
+
+<div id="bigBox">
+    <img id="bigImg" src="IMG_0955.jpg">
+</div>
+</body>
+</html>
