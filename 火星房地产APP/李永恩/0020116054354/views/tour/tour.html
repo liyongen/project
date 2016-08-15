@@ -1,0 +1,34 @@
+<ion-view view-title="欢迎来到火星地产" id="tour-view">
+
+
+    <ion-nav-buttons side="right">
+        <a class="button button-clear" ui-sref="tabs" ng-if="isShow">进入</a>
+    </ion-nav-buttons>
+    <!--<ion-content>-->
+    <ion-slide-box  auto-play="true" on-slide-changed="onSlideChanged()">
+        <!--on-slide-changed="onSlideChanged()"监听索引值有没有变化-->
+        <ion-slide>
+            <div class="box">
+                <img src="images/1-15010Q441215C.jpg">
+            </div>
+
+        </ion-slide>
+        <ion-slide>
+            <div class="box">
+                <img src="images/2013-07-037558_02.jpg">
+            </div>
+        </ion-slide>
+        <ion-slide>
+            <div class="box">
+                <img src="images/b9ae9c2e-7eda-40f2-829b-aa7efec803ca_1.jpg">
+            </div>
+        </ion-slide>
+        <ion-slide>
+            <div class="box">
+                <img src="images/5598c0ad756eb_03.jpg">
+            </div>
+        </ion-slide>
+    </ion-slide-box>
+
+    <!--</ion-content>3个分页按钮会跟文字重叠-->
+</ion-view>
