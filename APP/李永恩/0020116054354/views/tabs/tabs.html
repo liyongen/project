@@ -1,0 +1,22 @@
+
+
+<!--这是选项卡页面-->
+<ion-tabs class="tabs-assertive tabs-icon-left">
+    <!--第一个选项卡指向ui-sref="tabs.home"-->
+    <ion-tab title="首页" icon-on="ion-ios-filing" icon-off="ion-ios-filing-outline" ui-sref="tabs.home">
+        <ion-nav-view name="tab-home"></ion-nav-view>
+    </ion-tab>
+    <!--第2个选项卡指向ui-sref="tabs.about"-->
+    <ion-tab title="微聊" icon-on="ion-chatbox-working" icon-off="ion-chatbox-working-outline" ui-sref="tabs.about">
+        <ion-nav-view name="tab-about"></ion-nav-view>
+    </ion-tab>
+
+    <ion-tab title="推荐" icon-on="ion-heart" icon-off="ion-heart-outline" ui-sref="tabs.recommend">
+        <ion-nav-view name="tab-recommend"></ion-nav-view>
+    </ion-tab>
+
+    <ion-tab title="我的" icon-on="ion-person" icon-off="ion-person-outline" ui-sref="tabs.me">
+        <ion-nav-view name="tab-me"></ion-nav-view>
+    </ion-tab>
+
+</ion-tabs>
