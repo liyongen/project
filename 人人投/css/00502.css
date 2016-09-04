@@ -1,0 +1,36 @@
+.main .inner .main-left{margin-right: 12px!important;}
+.store{width:730px;border-top: 3px solid #000;padding-top: 11px;}
+.store .product{height: 132px;width: 721px;border: 1px solid #ccc;padding: 7px 0 7px 7px ;margin-bottom: 26px;position: relative;}
+.store .product .icon{position: absolute;left:-7px;
+    top:-7px;}
+.store .product .product_img{width: 255px;height: 132px;position: relative;display: block;}
+.store .product .product_img .modules{width: 255px;height: 92px;position: absolute;left:0;top: 0;background: #000000;opacity: 0.6;text-align: center;color: #fff;line-height: 20px;padding-top: 40px;}
+.store .product .product_img .modules s{color: red}
+
+.store .product .product_img img{width: 100%;height: 100%;}
+
+.store .product .introduction{position: relative;margin-left:14px;}
+.store .product .introduction h5{margin-bottom: 5px;}
+.store .product .introduction .bar{width: 241px;height: 9px;margin-bottom:10px;background: #e3e4e3;border-radius: 5px;padding: 3px;margin-left: 134px;}
+.store .product .introduction span{background:#db4f33;display: block;height:9px;border-bottom-left-radius: 5px;border-top-left-radius: 5px;width: 50%}
+.store .product .introduction .icon{position:absolute;left:390px;top:17px;text-align: center;line-height: 20px;
+    width: 40px;height: 20px;background: url("../images/005sprite.png") -7px -15px;}
+.store .product .b{margin-right:48px;float:left;width:93px;height:24px;background: gold;color: #fff;line-height: 24px;text-align: center;}
+.store .product ul{float:left;}
+.store .product ul li{float: left;width:100px;height:54px;}
+.store .product ul li s{display: block;}
+.store .product .product_bottom{height: 32px;background: #f3f3f3;width: 466px;}
+.store .product .product_bottom li{width: 24px;margin-left: 19px;margin-top: 9px;
+padding-left: 20px;line-height:14px;height:14px;}
+.store .product .product_bottom .icon_one{background: url("../images/005sprite.png") -55px -8px;}
+.store .product .product_bottom .icon_two{background: url("../images/005sprite.png") -55px -29px;}
+.store .product .product_bottom .icon_three{background: url("../images/005sprite-1.png") -37px -19px;}
+.store .product .product_bottom .icon_four{width: 100px;margin-left: 157px;}
+.store .product .product_bottom .icon_four a{color: #007bb8;}
+.store .product .product_bottom .icon_four a.ac{color: #332e29}
+.store .paging{margin-bottom: 53px;text-align:center;margin-left: 10px;}
+.store .paging input{background: #ffffff;border: 1px solid #cccccc;width: 27px;height:25px;text-align: center}
+.store .paging .pageTurning{width: 70px;height: 25px;}
+.store .paging .ac{background: #cccccc}
+
+.store .paging input:hover{background: #cccccc}

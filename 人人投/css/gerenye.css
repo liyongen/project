@@ -1,0 +1,58 @@
+.banner .inner h3{ line-height: 52px; padding-top: 7px; font-size: 22px; color: #000000; vertical-align: bottom; height: 52px;}
+.banner{ background: #f9f9f9;}
+.banner .inner h3 span{ display: inline-block; width: 6px; height: 24px; background: #000;vertical-align: middle; margin-bottom: 4px;}
+.banner .inner .banner-top{ border: 1px solid #cccccc; width: 998px; height: 168px;
+    position: relative;}
+.banner .inner .banner-top p{line-height: 44px; margin-top: 8px; font-size: 18px; margin-left: 204px;}
+.banner .inner .banner-top .banner-center{ height: 45px; background: #f2f2f2; width: 970px; margin-left:28px; position: relative; }
+.banner .inner .banner-top .banner-center p{ height: 22px; width:54px; position: absolute; right: 88px; background: #24cdb8;
+    font-size: 14px; line-height: 22px; color: #fff; text-align: center;  border-radius: 4px; top:-16px;}
+.banner .inner .banner-top .banner-center b{ width: 8px ; height: 4px; position: absolute;
+   right: 108px; top: -21px;}
+.banner .inner .banner-top .banner-center h4{ height: 25px; width: 25px; border-radius: 50%; background: #24cdb8
+ url("../images/onXiangmumain.png") no-repeat -614px -238px;  position: absolute;right: 100px; top: -38px; }
+.banner .inner .banner-top .banner-center h5{ width: 25px; height: 25px; border-radius: 50%; position: absolute;
+right: 58px;top:-38px; background:#a4a4a4  url("../images/onXiangmumain.png") no-repeat -782px -55px;}
+.banner .inner .banner-top .her{width: 128px; height: 128px; border-radius: 50%; overflow: hidden;
+    border-bottom: 4px solid #fff; position: absolute; left: 20px; top:10px;}
+.banner .inner .banner-top .her img{ width: 100%; height: 100%;}
+.banner .inner .banner-top .banner-center ul{ margin-left: 178px;}
+.banner .inner .banner-top .banner-center ul li { float: left; width: 82px; padding-left: 17px; height: 35px;
+margin-top: 5px; line-height: 18px; font-size: 18px;}
+.banner .inner .banner-top .banner-center ul li span{ display: block; font-size: 12px;line-height: 15px;}
+.banner .inner .banner-top .banner-center ul .lir{border-right: 1px dashed #a7a7a7; border-left: 1px dashed #a7a7a7;}
+.banner .inner .banner-top .h6{ line-height: 30px; color: #333333;margin-left: 204px; font-size: 14px;}
+.banner .inner .banner-top .h6 span{ color: #a2a2a2; font-size: 12px; margin-top: 2px;}
+.banner .inner .banner-top .pis{ line-height: 0px; font-size: 14px;}
+.banner .inner .banner-top button{ position: absolute; right: 44px; bottom: 20px; background: #f39c11; width: 95px; height: 33px;
+border-radius: 4px; color: #fff; font-size: 14px;}
+.main{padding-top: 40px; background: #f9f9f9;}
+.main .inner .main-left{ width: 252px; height: 294px;  background: #fff; padding-top: 10px;  margin-right: 18px;margin-bottom: 10px; border: 1px solid #cccccc; }
+.main .inner .main-left ul li{ line-height: 39px; font-size: 14px; margin-bottom: 10px; padding-left: 50px;}
+.main .inner .main-left ul li:hover a{ color: #fff;}
+.main .inner .main-left ul li:nth-child(1){ background: url("../images/onXiangmumain.png") no-repeat -844px 4px;}
+.main .inner .main-left ul li:nth-child(1):hover{background:#e64424 url("../images/onXiangmumain.png") no-repeat -844px 4px;}
+.main .inner .main-left ul li:nth-child(2){ background: url("../images/onXiangmumain.png") no-repeat -600px -175px;}
+.main .inner .main-left ul li:nth-child(2):hover{background:#e64424 url("../images/onXiangmumain.png") no-repeat -600px -175px;}
+.main .inner .main-left ul li:nth-child(3){ background: url("../images/onXiangmumain.png") no-repeat -598px -352px;}
+.main .inner .main-left ul li:nth-child(3):hover{background:#e64424 url("../images/onXiangmumain.png") no-repeat -598px -352px;}
+.main .inner .main-left ul li:nth-child(4){ background: url("../images/onXiangmumain.png") no-repeat -598px -120px;}
+.main .inner .main-left ul li:nth-child(4):hover{background:#e64424 url("../images/onXiangmumain.png") no-repeat -598px -120px;}
+.main .inner .main-left ul li:nth-child(5){ background: url("../images/onXiangmumain.png") no-repeat -598px -417px;}
+.main .inner .main-left ul li:nth-child(5):hover{background:#e64424 url("../images/onXiangmumain.png") no-repeat -598px -417px;}
+.main .inner .main-left ul li:nth-child(6){ background: url("../images/onXiangmumain.png") no-repeat -598px -283px;}
+.main .inner .main-left ul li:nth-child(6):hover{background:#e64424 url("../images/onXiangmumain.png") no-repeat -598px -283px;}
+.main .inner .main-left ul li a{color: #000;}
+.main .inner .main-left ul{ margin-left: 10px; width: 230px;}
+.main .inner .main-right{ width: 685px; height: 584px; background: #fff;border: 1px solid #cccccc; padding: 10px 20px; border-top: 3px solid #000;}
+.main .inner .main-right h3{ font-size: 16px; border-bottom: 1px dashed #aeaeae; line-height: 38px;}
+.main .inner .main-right p{margin-top: 10px; margin-bottom: 16px; line-height: 26px; font-size: 14px;}
+.main .inner .main-right ul p{float: left; width: 278px; margin-top: 0px; line-height: 50px;margin-bottom: 12px;}
+.main .inner .main-right ul p span{ display: inline-block; width: 8px; height: 8px; border: 2px solid #ef6765; border-radius: 50%; margin: 0px 6px;}
+.main .inner .main-right .hangye p{ width: 327px;margin-top: 0px; line-height: 30px; margin-bottom: 0px;}
+.main .inner .main-right .hangye p span{ border-color: #feb34b;}
+.main .inner .main-right .hangye{ margin-top: 10px;}
+.main .inner .main-right ul li span{display: inline-block; width: 8px; height: 8px; border: 2px solid #24cdb8; border-radius: 50%; margin: 0px 6px;}
+.main .inner .main-right ul li{ line-height: 28px;}
+.main .inner .main-right ul{margin:8px 0px 5px;}
+.main .inner .main-right .tigong li{ float: left; margin: 0px 6px 0px 14px;}

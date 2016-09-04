@@ -1,0 +1,58 @@
+.main{background:#f9f9f9;padding-bottom: 50px;}
+.main img{width: 100%;height: 190px;}
+.main .main_center{border: 1px solid #CCCCCC;height: 239px;background: #ffffff}
+.main .main_center ul{padding:  18px 0;}
+.main .main_center ul li{float: left;border-right: 1px dashed #cccccc;text-align: center;height: 206px;width: 140px;margin: 0 auto;}
+.main .main_center ul li span{display: block;width: 80px;height: 80px;margin: 0 auto 16px;}
+.main .main_center ul .main_center_one{width: 199px;}
+.main .main_center ul .main_center_two{width:209px;}
+.main .main_center ul .main_center_three{width:200px;}
+.main .main_center ul .main_center_four{width: 199px;}
+.main .main_center ul .main_center_five{width: 189px;}
+.main .main_center ul .wuyoubianxian{border-right: none}
+.main .main_center ul li .active{color: #e6504e}
+.main .main_center ul li .span1{background: url("../images/004_sprite.png") left top}
+.main .main_center ul li .span2{background: url("../images/004_sprite.png") -104px top}
+.main .main_center ul li .span3{background: url("../images/004_sprite.png") -241px top}
+.main .main_center ul li .span4{background: url("../images/004_sprite.png") -347px top}
+.main .main_center ul li .span5{background: url("../images/004_sprite.png") -457px top}
+.main .main_center ul li h4{text-align: center;font-size: 18px;font-weight:400;margin-bottom: 7px;}
+.main .main_center ul li .page{width: 140px;margin: 0 auto;}
+.main .main_center ul li p{width:140px;text-align:left;line-height: 22px; font-size: 14px;}
+
+.main .tab{height: 70px;padding-top: 28px}
+.main .tab ul{height: 49px;background: #ffffff;border-top: 3px #000 solid}
+.main .tab ul li{float: left;text-align: center;background: #000;margin-right: 1px;font-size: 20px;line-height: 49px;}
+.main .tab ul li a{color: #fff;}
+.main .tab ul .tab_one{width: 199px;}
+.main .tab ul .tab_two{width: 315px;}
+.main .tab ul .tab_three{width: 205px;}
+.main .tab ul .tab_four{width: 277px;}
+.main .tab ul .show{background: #fff;}
+.main .tab ul .show a{color:#000;}
+.main .images{position: relative}
+.main .images .big_picture{width: 100%;height:100%;display: block}
+.main .images .prepare{position: absolute;left: -12px;top:14px;width:237px;height: 52px;}
+.main .images .triangle{position: absolute;left: -11px;top:65px;width: 11px;height: 13px;}
+.main .images .process{position: absolute;left: -12px;top:815px;width:237px;height: 52px;}
+.main .images .triangle02{position: absolute;left: -11px;top:866px;width: 11px;height: 13px;}
+.main .btn{height: 130px;}
+.main input{margin: 30px auto 0;width: 310px;height: 50px;background: #db4f33;color:#fff;display:block;font-size: 20px;}
+.main .tab_image .show{display: none}
+.main .images .process_one{position: absolute;left: -12px;top:679px;width:237px;height: 52px;}
+.main .images .triangle022{position: absolute;left: -11px;top:731px;width: 11px;height: 13px;}
+.main .btn{height: 130px;}
+.main .images .process_two{position: absolute;left: -12px;top:548px;width:237px;height: 52px;}
+.main .images .triangle_two{position: absolute;left: -12px;top:596px;width: 11px;height: 13px;}
+.main .images .process_three{position: absolute;left: -12px;top:813px;width:237px;height: 52px;}
+.main .images .triangle_two{position: absolute;left: -12px;top:864px;width: 11px;height: 13px;}
+.main .images .triangle_three{position: absolute;left: -12px;top:599px;width: 11px;height: 13px;}
+.main .images .process_four{position: absolute;left: -12px;top:308px;width:237px;height: 52px;}
+.main .images .triangle_four{position: absolute;left: -12px;top:359px;width: 11px;height: 13px;}
+.main .images .process_five{position: absolute;left: -12px;top:528px;width:237px;height: 52px;}
+.main .images .triangle_five{position: absolute;left: -12px;top:580px;width: 11px;height: 13px;}
+.main .images .process_six{position: absolute;left: -12px;top:862px;width:237px;height: 52px;}
+.main .images .triangle_six{position: absolute;left: -12px;top:913px;width: 11px;height: 13px;}
+.main .images .input{height: 50px;padding: 30px 0 50px 285px;margin: 0 auto;border-top: 1px solid #ebebeb;width: 715px;}
+.main .images .input input{width: 195px;height: 50px;float: left;margin:0 34px 0 0;display: block;}
+.main .images .input .input_one{background-color: #feb34b}

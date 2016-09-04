@@ -1,0 +1,104 @@
+body{background: #f9f9f9;}
+.inner .main{background: #fff;}
+.inner .top {
+    height: 59px;
+    border-bottom: 3px solid #000;
+}
+
+.inner .main {
+    height:626px;
+    border-left: 1px solid #CCC;
+    position: relative;
+    border-bottom: 1px solid #CCC;
+    border-right: 1px solid #CCC;
+    margin-bottom: 74px;
+
+}
+
+.inner .main .main_left {
+    padding: 58px 0 0 82px;
+    width: 408px;
+
+
+}
+.inner .main .main_left .aInput{
+    padding-right: 120px;
+    border-right:1px solid #CCCCCC ;
+}
+
+.inner .main .main_left h3 {
+    font-size: 28px;
+    font-weight: normal;
+    margin-bottom: 60px;
+}
+
+.inner .main .main_left input {
+    border: 1px solid #CCC;
+    border-radius: 2px;
+    padding-left: 46px;
+    margin-bottom: 22px;
+}
+
+.inner .main .main_left .name {
+    width: 238px;
+    height: 40px;
+    background: url("../images/001agent.png") no-repeat 13px 10px;
+}
+
+.inner .main .main_left .password {
+    width: 238px;
+    height: 40px;
+    background: url("../images/001lock.png") no-repeat 13px 10px;
+}
+.inner .main .main_left .email {
+    width: 238px;
+    height: 40px;
+    background: url("../images/Shape-121.png") no-repeat 13px 10px;
+}
+
+
+.inner .main .main_left .verification {
+    width: 122px;
+    height: 40px;
+    padding-left: 10px;
+}
+.inner .main .main_left img{vertical-align: middle}
+
+.inner .main .main_left span {
+    margin-left: 23px;
+    color: #000;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.inner .main .main_left .btn {
+    width: 286px;
+    height: 40px;
+    color: #ffffff;
+    text-align: center;
+    padding-left: 0;
+    margin-bottom: 9px;
+    font-size: 20px;
+    background: #db4f33;
+    border-radius: 2px;
+}
+.inner .main .main_left p{margin-left: 219px;}
+
+.inner .main .main_right{
+    width: 433px;
+    padding: 68px 0 0 75px;
+}
+.inner .main .main_right h4{color: red;font-style: italic;margin-bottom: 92px;font-size:14px;font-weight: normal}
+.inner .main .main_right p{margin-bottom: 20px;}
+.inner .main .main_right .btn {
+    width: 134px;
+    height: 36px;
+    background: #db4f33;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 46px;
+    font-size: 20px;
+    border-radius: 2px;
+}
+.inner .main .main_right .main_right_page{margin-left: 18px;margin-bottom: 15px;}
+.inner .main .main_right .main_right_page img{margin-right: 14px;}
