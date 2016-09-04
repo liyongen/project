@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html ng-app="myapp">
+<head>
+    <meta charset="UTF-8">
+    <title>运动商城</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet"/>
+    <style>
+        .navbar-right { float: right !important; margin-right: 5px;}
+        .navbar-text { margin-right: 10px; }
+
+        /*angularjs淡入动画效果*/
+        .ngFadeIn.ng-enter{opacity:0;transition:3s linear opacity;}
+        .ngFadeIn.ng-enter-active{opacity:1;}
+
+        /*angularjs滑入动画效果*/
+        .ngSlideIn.ng-enter{position:absolute;left:-100%;transition:3s ease-in all;}
+        .ngSlideIn.ng-enter-active{position:absolute;left:0;}
+    </style>
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-route.min.js"></script>
+    <script src="js/angular-animate.min.js"></script>
+    <script src="controllers/mycart.js"></script>
+    <script src="filters/customFilters.js"></script>
+    <!--<script src="filters/customFilter.js"></script>一定要写在上面，才有下面的依赖注入-->
+    <script>
+//        定义这个页面的模块名，还要依赖注入其他模块来帮助，customFilter，mycart为其他模块名
+
+        var myapp = angular.module("myapp", ["customFilter","mycart","ngRoute","ngAnimate"]);//"ngRoute","ngAnimate"加入的路由动画模块
+
+        //配置路由器
+        myapp.config(function($routeProvider){
+            $routeProvider.when("/productList",{templateUrl:"routeviews/productList.html"});
+            $routeProvider.when("/checkout",{templateUrl:"routeviews/checkoutSummary.html",controller:"checkoutCnotroller"});
+            $routeProvider.when("/placeOrder",{templateUrl:"routeviews/placeOrder.html"});//引进了这个网页后要用到sportStoreController,控制器的数据   ，$scope.data.shipping={};//用来保存用户信息
+            $routeProvider.when("/complete",{templateUrl:"routeviews/thankYou.html"});
+            $routeProvider.otherwise({templateUrl:"routeviews/productList.html"});
+        });
+    </script>
+    <!--配置好路由才能用需要用到它的控制器-->
+    <script src="controllers/sportStoreController.js"></script>
+    <script src="controllers/productListController.js"></script>
+    <script src="controllers/checkout.js"></script>
+    <!--先有了模块名，再有里面的控制器，所以要放在后面-->
+</head>
+<body ng-controller="sportStoreController">
+<h1>火星时代运动商城</h1>
+<!--ngSlideIn,angularjs滑入动画效果-->
+<div class="navbar navbar-inverse">
+    <a class="navbar-brand" href="#productList">运动商城</a>
+    <div class="navbar-right" ng-controller="cartcontroller">
+        <div class="navbar-text">
+            <b>您的购物车:</b>
+            {{totalNumber()}}个商品, {{totalMoney()|currency:"RMB ￥"}}
+            <!--|currency:"RMB ￥"可以这样写-->
+        </div>
+        <a class="btn btn-default navbar-btn" href="#checkout">结账</a>
+    </div>
+</div>
+
+
+<!--在这里切换每一个子页面,angularjs淡入动画效果-->
+<!--<div ng-view class="ngFadeIn"></div>-->
+
+<div ng-view class="ngSlideIn"></div>
+
+
+<!--<div class="panel panel-default row" ng-controller="productListController">-->
+    <!--<div class="col-xs-3">-->
+        <!--&lt;!&ndash;商品类别放这里&ndash;&gt;-->
+        <!--<a class="btn btn-block btn-default btn-lg" ng-click="selectCategory(null)">首页</a>-->
+        <!--&lt;!&ndash;ng-click="selectCategory(null)自己设定为null时就返回全部类别&ndash;&gt;-->
+        <!--&lt;!&ndash;生成导航元素&ndash;&gt;-->
+        <!--<a class=" btn btn-block btn-default btn-lg" ng-repeat="item in data.categories"-->
+           <!--ng-class="getActiveClass(item.category)"-->
+           <!--ng-click="selectCategory(item.category)">-->
+            <!--{{item.category}}-->
+        <!--</a>-->
+
+    <!--</div>-->
+
+    <!--<div class="col-xs-8">-->
+        <!--&lt;!&ndash;产品信息放这里&ndash;&gt;-->
+        <!--<div class="well" ng-repeat="product in data.products | filter:showByCategory |range:currentPage:pageSize">-->
+            <!--&lt;!&ndash;| filter:showByCategory myapp模块下的过滤函数        |range:currentPage:pagesize  customFilter模块下的过滤器      区分过滤函数与过滤器&ndash;&gt;-->
+            <!--<h3>-->
+                <!--<strong>{{product.name}}</strong>-->
+                <!--<span class="pull-right label label-primary">{{product.price}}</span>-->
+            <!--</h3>-->
+            <!--<button class="btn btn-success btn-sm pull-right" ng-click="addToCart(product)">加入购物车</button>-->
+            <!--<img ng-src="{{product.imgsrc}}" style="padding-right: 10px;"/><span class="lead">{{product.description}}</span>-->
+        <!--</div>-->
+
+
+        <!--&lt;!&ndash;分页导航按钮&ndash;&gt;-->
+        <!--<div class="pull-right btn-group">-->
+            <!--<a class="btn btn-default"-->
+               <!--ng-click="selectPage(page)"-->
+               <!--ng-class="getActiveNavClass(page)"-->
+               <!--ng-repeat="page in data.products | filter:showByCategory | navCount:pageSize">{{page}}</a>-->
+
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+</body>
+</html>

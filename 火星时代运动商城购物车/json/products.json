@@ -1,0 +1,13 @@
+[
+    {"name":"Product #1卫衣红色","description":"A product这卫衣外形很像燕子","category":"Category #1卫衣","price":100,"imgsrc":"images/TB1_50x50.jpg"},
+    {"name":"Product #1卫衣绿色","description":"A product这卫衣外形很可爱","category":"Category #1卫衣","price":200,"imgsrc":"images/TB2_50x50.jpg"},
+    {"name":"Product #1长袖红色","description":"A product这长袖外形很像外星人","category":"Category #3长袖","price":300,"imgsrc":"images/TB3_50x50.jpg"},
+    {"name":"Product #1长袖绿色","description":"A product这长袖外形很像地毯","category":"Category #3长袖","price":400,"imgsrc":"images/TB4_50x50.jpg"},
+
+
+    {"name":"Product #1外套红色","description":"A product这卫衣外形很像燕子","category":"Category #2外套","price":100,"imgsrc":"images/TB1_50x50.jpg"},
+    {"name":"Product #1外套绿色","description":"A product这卫衣外形很可爱","category":"Category #2外套","price":200,"imgsrc":"images/TB2_50x50.jpg"},
+    {"name":"Product #1毛衣红色","description":"A product这长袖外形很像外星人","category":"Category #4毛衣","price":300,"imgsrc":"images/TB3_50x50.jpg"},
+    {"name":"Product #1毛衣绿色","description":"A product这长袖外形很像地毯","category":"Category #4毛衣","price":400,"imgsrc":"images/TB4_50x50.jpg"}
+
+]

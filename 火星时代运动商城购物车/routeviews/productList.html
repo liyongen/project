@@ -1,0 +1,38 @@
+<div class="panel panel-default row" ng-controller="productListController">
+    <div class="col-xs-3">
+        <!--商品类别放这里-->
+        <a class="btn btn-block btn-default btn-lg" ng-click="selectCategory(null)">首页</a>
+        <!--ng-click="selectCategory(null)自己设定为null时就返回全部类别-->
+        <!--生成导航元素-->
+        <a class=" btn btn-block btn-default btn-lg" ng-repeat="item in data.categories"
+           ng-class="getActiveClass(item.category)"
+           ng-click="selectCategory(item.category)">
+            {{item.category}}
+        </a>
+
+    </div>
+
+    <div class="col-xs-8">
+        <!--产品信息放这里-->
+        <div class="well" ng-repeat="product in data.products | filter:showByCategory |range:currentPage:pageSize">
+            <!--| filter:showByCategory myapp模块下的过滤函数        |range:currentPage:pagesize  customFilter模块下的过滤器      区分过滤函数与过滤器-->
+            <h3>
+                <strong>{{product.name}}</strong>
+                <span class="pull-right label label-primary">{{product.price}}</span>
+            </h3>
+            <button class="btn btn-success btn-sm pull-right" ng-click="addToCart(product)">加入购物车</button>
+            <img ng-src="{{product.imgsrc}}" style="padding-right: 10px;"/><span class="lead">{{product.description}}</span>
+        </div>
+
+
+        <!--分页导航按钮-->
+        <div class="pull-right btn-group">
+            <a class="btn btn-default"
+               ng-click="selectPage(page)"
+               ng-class="getActiveNavClass(page)"
+               ng-repeat="page in data.products | filter:showByCategory | navCount:pageSize">{{page}}</a>
+            <!--| filter:showByCategory经过这个过滤函数后，就变成剩下的新数组，| navCount:pageSize经过这个过滤函数后这个新数组就变成了一个是有多少个按钮的数字的数组，变成[1,2,3,4,5,6&#45;&#45;&#45;&#45;&#45;&#45;]，所以这个page是里面的元素是一个数字-->
+
+        </div>
+    </div>
+</div>
