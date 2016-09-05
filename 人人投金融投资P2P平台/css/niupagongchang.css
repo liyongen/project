@@ -1,0 +1,5 @@
+.banner .inner h3{ line-height: 52px; padding-top: 7px; font-size: 22px; color: #000000; vertical-align: bottom; height: 52px;}
+.banner{ background: #f9f9f9; font-weight:normal ;}
+.banner .inner h3 span{ display: inline-block; width: 6px; height: 24px; background: #000;vertical-align: middle; margin-bottom: 4px;}
+.banner .inner h3 b{ width: 270px; height: 29px; background: url("../images/onXiangmumain.png") no-repeat -2px -236px;
+    display:inline-block;  vertical-align: middle;}

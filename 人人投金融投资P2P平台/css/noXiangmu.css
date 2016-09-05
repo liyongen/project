@@ -1,0 +1,61 @@
+.banner{background: #f9f9f9; border-bottom: 5px solid #000;}
+.banner .inner h3{ line-height: 52px; padding-top: 7px; font-size: 22px; color: #000000; vertical-align: bottom; height: 52px;}
+.banner .inner h3 span{ display: inline-block; width: 6px; height: 24px; background: #000;vertical-align: middle; margin-bottom: 4px;}
+.banner .inner dl{ border: 1px solid #cccccc; margin-bottom: 16px; width: 251px;}
+.banner .inner dl dt{ line-height: 44px; height: 44px; color: #000; font-size: 16px;  padding-left: 42px;}
+.banner .inner .top dt{ background: #f3f3f3 url("../images/onXiangmumain_03.jpg") no-repeat 18px 14px;}
+.banner .inner .bot dt{ background: #f3f3f3 url("../images/onXiangmumain_19.jpg") no-repeat 18px 14px;}
+.banner .inner dl dd{  height: 40px; line-height: 40px; font-size: 14px; padding:0 16px;}
+.banner .inner dl dd a{ color: #000; display: inline-block; width: 192px; padding-left: 27px;}
+.banner .inner dl dd:hover a{ background: #db4f33; color: #fff;}
+.banner .inner dl{ padding-bottom: 14px;}
+.banner .inner .left button{ background:#db4f33; display: inline-block; width: 254px; height: 50px; color: #fff; font-size: 20px; margin-top: 20px;
+}
+.banner .inner .left{ float: left; width: 264px;}
+.banner .inner .right .right-top{ height: 180px; background:#f3f3f3; width:736px; float: left; border-top: 2px solid #000000;  margin-bottom: 15px;}
+.banner .inner .right .right-left .ipt1{ height: 37px; width: 359px; border: 1px solid #cccccc; border-right: none;
+    vertical-align: bottom; line-height: 37px; font-size: 14px; font-family: "Arial Black", 'Open Sans', "Î¢ÈíÑÅºÚ";
+  padding-left: 10px;}
+.banner .inner .right ul{ height: 50px;}
+.banner .inner .right{width: 736px; float: right;}
+.banner .inner .right .right-left{ width: 495px; border-right: 1px solid #bbbbbb; height: 180px;}
+.banner .inner .right .right-left .form1{  margin:20px 0px 23px 34px;}
+.banner .inner .right .right-left .ipt2{ height: 41px; width: 39px; vertical-align: top;
+ background:#adadad url("../images/onXiangmumain.png") no-repeat -120px -102px;}
+.banner .inner .right .right-left .form2{margin-left: 34px;}
+.banner .inner .right .right-left .form2 select{width: 72px; height: 23px; background: #adadad; color: #fff; font-size: 14px;padding-left: 10px;
+ margin-right: 34px; margin-bottom: 20px;}
+.banner .inner .right .right-left .form2 span{ line-height: 24px; margin-right: 12px; font-size: 14px;}
+.banner .inner .right .right-left .form2 input{ width: 63px; height: 27px; border: 1px solid #cccccc;}
+.banner .inner .right .right-left .form2 .true{ width: 48px; height: 27px; background: #adadad; color: #fff; vertical-align: middle;}
+.banner .inner .right .right-right .pc{ width: 128px; height: 140px; overflow: hidden; margin-top: 22px; margin-left: 50px;}
+.banner .inner .right .right-bot{ height: 386px; border: 1px solid #cccccc; width: 736px; background: #fff;}
+.banner .inner .right .right-bot div{ text-align: center;}
+.banner .inner .right .right-bot div p{ line-height: 80px; padding-top: 44px;}
+.banner .inner .right .right-bot div input{ width: 100px; height: 40px; background: #feb34b; color: #fff;
+    border-radius: 4px; font-size: 18px;}
+.main{ height: 394px; border-bottom: 1px solid #e5e5e5; margin-bottom: 1px;}
+.main .inner .main-left{ width:620px; }
+.main .inner .main-left h3{ line-height: 78px; font-size: 24px;}
+.main .inner .main-left h3 span{ color: red;}
+.main .inner .main-left p b{ font-size: 58px;color: #cfcfcf; font-family: "Ó×Ô²"; position: absolute; }
+.main .inner .main-left p .b1{left: -30px; top: 10px;}
+.main .inner .main-left p .b2{right:20px; top: 66px;}
+.main .inner .main-left p{ line-height: 32px; font-size: 14px; padding-left: 35px;
+    position: relative;}
+.main .inner .main-left h4{ line-height: 46px; padding-top: 14px; font-size: 20px; color: red;}
+.main .inner .main-right{ float: left; width: 380px;}
+.main .inner .main-right h3{line-height: 78px; font-size: 24px;}
+.main .inner .main-right h3 span{ color: red;}
+.main .inner .main-right input{ height: 47px; width: 122px; background: #db4f33; border-radius:4px;
+    border-bottom: 5px solid #9a2a14; color: #fff; font-size: 18px; }
+.main .inner .main-right span{ font-size: 14px; padding-left: 20px; line-height: 50px;}
+.main .inner .main-right h2{ font-size: 20px; line-height: 63px; font-weight: 500; margin-top: 24px;}
+.main .inner .main-right .main-right-img .img{ width: 118px; height: 118px; padding-left: 14px; float: left; }
+
+.main .inner .main-right p{ font-size: 14px; padding-top: 14px; padding-left:10px; float: left;}
+.main2{ height: 163px; background: #e5e5e5;}
+.main2 .inner h2{ text-align: center; line-height: 70px; font-size: 24px;}
+.main2 .inner ul{ margin-right: -38px;}
+.main2 .inner ul li{ float: left; margin-right: 38px; width: 166px; height: 60px;
+    background: #fff url("../images/onXiangmumain.png") no-repeat -324px -8px; border: 1px solid #d5d5d5;}

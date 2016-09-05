@@ -1,0 +1,52 @@
+/*重置css*/
+body,ul,li,dl,dt,dd,h1,h2,h3,h4,h5,span,i,strong,b,p{margin: 0;padding: 0;}
+img,input,textarea,a,button{border: none;outline: none;padding: 0;margin: 0;}
+a{text-decoration: none}
+li{list-style: none}
+i{font-style: normal}
+textarea{resize: none}
+s, i, em {
+    font-style: normal;
+    text-decoration: none;
+}
+
+/*公共css*/
+body{font-family:"微软雅黑";font-size: 12px;color: #333333}
+.inner{width:1000px;margin: 0 auto;}
+.clearfix:after{content: "";display: block;height: 0;clear: both;font-size: 0;}
+.clearfix{*zoom:1}
+.fl{float: left;_display: inline}
+.fr{float: right;_display: inline}
+.wordColor{color: #ffffff;}
+.clear{ clear: both;}
+
+
+.header{height: 98px;background-color: #333333; border-top: 3px solid #000;}
+.header .inner .header-left .logo{float: left;}
+.header .inner .header-left{ padding-top: 30px; float: left;}
+.header .inner .header-left img{height: 40px;}
+.header .inner .header-left .word{float: left;}
+.header .inner .header-left .logo h3{font-size: 30px; display:inline-block; vertical-align: bottom; padding-bottom: 4px;}
+.header .inner .header-left .logo span{width: 1px; height: 30px; display: inline-block;background: #858585; margin: 0 8px 4px;}
+.header .inner .header-left .word{ padding: 6px 20px 0px 0px;}
+.header .inner .header-left .word p{display:inline-block; line-height: 13px; font-size: 12px;}
+.header .inner .header-left .word span{display:block; line-height: 18px; font-size: 14px;}
+.header .header-nav ul li{ float: left; font-family: "广捷居迷你"; font-size: 24px; margin-left: 48px; line-height: 90px; padding-top: 4px;}
+.header .header-nav ul .xin{font-size: 16px;height: 94px;}
+.header .header-nav ul .active{margin-left: 72px; width: 206px; background: #000 url("../images/nav_03.jpg") no-repeat 47px 46px;}
+.header .header-nav ul li a{ color: #ffffff;  font-weight: 900;}
+.header .header-nav ul .active .renter{ padding-left: 70px;}
+.footer{ height: 162px; background: #000;}
+.footer .nav ul{ margin-left: -16px;}
+.footer .nav ul li{ float: left;font-family: "Arial Black", 'Open Sans', "微软雅黑"; width: 62px;
+    margin-left: 16px; border-right: 2px solid  #bbbaba; margin-top: 30px;}
+.footer .nav ul li a{ color: #bbbaba; }
+.footer .nav ul .right{ border-right: none;}
+.footer .nav p{ line-height: 50px;font-family: "Arial Black", 'Open Sans', "微软雅黑"; color: #bbbaba;}
+.footer .ubc ul li{ float: left; margin-right: 10px;}
+.footer .ubc ul{margin-right: -10px;}
+.footer .ubc{ float: left; padding-left: 212px;}
+.footer .ubc p{ line-height: 26px; padding-top: 24px; color: #b4b3b3; font-size: 14px;}
+.footer .inner span{ display:block; height: 1px; background: #333333;}
+.footer .inner .copy li{ float: left; margin: 16px 12px 0px 0px;}
+.footer .inner .copy{width:440px; margin: 0 auto;}
